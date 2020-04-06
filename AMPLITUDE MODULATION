@@ -1,0 +1,41 @@
+clc;
+clear all;
+t = 0:0.001:1;
+Vm = 5;
+Vc = 10;
+Fm = 2;
+Fc = 25;
+m = Vm*Sin(2*Pi*fm*t);
+c = Vc*Sin(2*Pi*Fc*t);
+amp = Vc+Vm*Sin(2*Pi*Fm*t);
+am = amp*Sin(2*Pi*Fc*t);
+y = awgn (am,10,'measured');
+subplot (4,1,1);
+plot (t,m);
+xlabel ('time')
+ylabel ('amplitude');
+little ('amplitude modulated Signals');
+subplot (4,1,2);
+plot (t,y,1)
+xlabel ('time')
+ylabel('amplitude');
+title('amplitude' Modulated Signal with AWGN");
+with Varying SNR.
+clc;
+clear all;
+t=0:0.001:1;
+Vm = 5;
+Vc = 10;
+fm = 2;
+fc = 25;
+m = Vm*Sin(2*Pi*Fm*t);
+C = Vc*Sin(2*Pi*Fc*t);
+amp = Vc+Vm*Sin(2*pi*fm*t);
+am = amp(am,10,'measured');
+y1 = awgn(am,10,'measured');
+y2 = awgn(am,100,'measured');
+y3 = awgn(am,1000,'measured');
+subplot (4,1,1);
+plot (t,am);
+xlabel ('time');
+ylabel ('amplitude');
